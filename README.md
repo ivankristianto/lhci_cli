@@ -1,6 +1,6 @@
 # My Cli
 
-> This package is collections of my day to day cli commands.
+> This package is collections of lhci-cli day to day cli commands.
 
 ## Requirements
 

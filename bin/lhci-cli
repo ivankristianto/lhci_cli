@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-process.title = 'My CLI';
+process.title = 'LHCI CLI Tool';
 
 require('../lib/cli');

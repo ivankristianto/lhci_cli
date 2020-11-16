@@ -1,10 +1,9 @@
 import os from 'os';
 import path from 'path';
 import fs from 'fs-extra';
-import log from './logger';
 
 export function getConfigFile() {
-	return path.join(os.homedir(), '.cloudflare-config');
+	return path.join(os.homedir(), '.lhci-cli-config');
 }
 
 export function defaultConfig() {
@@ -40,15 +39,4 @@ export async function set(key, value) {
 	config[key] = value;
 
 	await write(config);
-}
-
-export async function getAuthToken() {
-	const token = await get('apiToken');
-
-	if (!token) {
-		log.warning('Please run cf config setup');
-		return false;
-	}
-
-	return token;
 }

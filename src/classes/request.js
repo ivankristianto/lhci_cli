@@ -1,5 +1,4 @@
 import fetch from 'node-fetch';
-import { getAuthToken } from '../utils/config';
 import log from '../utils/logger';
 
 class Request {
@@ -10,9 +9,7 @@ class Request {
 	}
 
 	static async constructHeaders(headersOpt = {}) {
-		const authToken = await getAuthToken();
 		return {
-			Authorization: `Bearer ${authToken}`,
 			...headersOpt,
 		};
 	}

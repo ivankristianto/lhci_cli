@@ -1,9 +1,9 @@
 {
   "name": "lhci-cli",
   "version": "0.0.1",
-  "description": "Collections of my day to day cli commands",
+  "description": "Lighthouse CI additional cli commands",
   "bin": {
-    "my": "bin/my"
+    "lhci-cli": "bin/lhci-cli"
   },
   "main": "lib/cli.js",
   "dependencies": {
