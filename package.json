@@ -1,6 +1,6 @@
 {
   "name": "lhci-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lighthouse CI additional cli commands",
   "bin": {
     "lhci-cli": "bin/lhci-cli"
